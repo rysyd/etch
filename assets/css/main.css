@@ -124,7 +124,7 @@ main#content ul#posts li {
 main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 main#content ul#posts li a {
@@ -279,4 +279,12 @@ footer#footer {
     font-weight: 400;
     color: #b3b3b3;
     margin: 40px 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    margin-right: 10px;
 }
