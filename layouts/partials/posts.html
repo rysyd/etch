@@ -1,6 +1,8 @@
-<h3>{{ i18n "posts.title" }}</h3>
+{{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
 <ul id="posts">
-{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{ .Render "li" }}
-{{- end }}
+  {{ range .Pages }}
+  {{ .Render "li" }}
+  {{- end -}}
 </ul>
+{{ end }}
